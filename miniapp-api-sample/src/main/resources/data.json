@@ -1,0 +1,346 @@
+{
+  "index": {
+    "candidates": ["东京", "大阪"],
+    "rollingPictures": [
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/pic1.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/pic2.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/pic3.png"
+      }
+    ],
+    "couponList": [
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left01.png",
+        "title": "完全個室居酒屋 九州さつき 六本木店",
+        "hot": 3,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx00.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left02.png",
+        "title": "炭火串焼きと種類豊富な旨い酒新座駅前を元気にする活力居酒屋です",
+        "hot": 1,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx01.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left03.png",
+        "title": "九州料理料理を中心全国の地酒をご準備しております",
+        "hot": 4,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx02.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left04.png",
+        "title": "個室空間 湯葉豆腐料理 千年の宴玉出駅前店",
+        "hot": 4,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx03.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left01.png",
+        "title": "完全個室居酒屋 九州さつき 六本木店",
+        "hot": 3,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx00.png"
+      },
+      {
+        "shopId": 1,
+        "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/coupon_left02.png",
+        "title": "【炭火串焼きと種類豊富な旨い酒新座駅前を元気にする活力居酒屋です",
+        "hot": 1,
+        "distance": "1.6km",
+        "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/picx01.png"
+      }
+    ]
+  },
+  "shop": [
+    {
+      "id": 1,
+      "title": "活力炭焼酒場 炭吉三",
+      "hot": 3,
+      "subtitle": "3,000円（通常平均）",
+      "imgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/shop01.png",
+      "distance": "1.6km",
+      "products": [
+        "<img style=\"padding-top:2px;width:100%;background-size:100% 100%;\" src=\"https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/shop02.png\"/><div style=\"margin-top:16px;font-size:20px;font-weight:800;line-height:36px;color:#5d5d5d;text-align:center;\">『リストランテ フィッシュボーン』</div><div style=\"padding-bottom:2px;font-size:29px;font-weight:800;line-height:36px;color:#f5870a;text-align:center;\">のCena A (5,500)円</div>",
+        "<div style=\"font-size:18px;font-weight:400;line-height:30px;color:#787676;\">炭火串焼きと種類豊富な旨い酒,新座駅前を元気にする活力居酒屋です。炭で焼いた美味しい串焼き・新鮮な肉刺・絶品もつ鍋、種類豊富なお酒が売りの活力居酒屋です。地下にある隠れ家のような店内は、掘りごたつ・お座敷がメイン。まるで自宅にいるかのようにリラックスして、楽しめること間違いなし。</div>"
+      ],
+      "coupons": [
+        {
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_10.png",
+          "title": "Cena Aが10％オフ",
+          "subtitle": "2022.10.17  10:00-10:10",
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2022年10月17日（金）～2022年10月17日（金）",
+            "【利用条件】有効期限／〜2023年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。",
+            "【クーポン説明】<span style=\"color:#BF242A\">1.</span>利用可能数は10枚までです。 <span style=\"color:#BF242A\">2.</span>使用回数が1回までです。 <span style=\"color:#BF242A\">3.</span>他のクーポンと併用できません。 <span style=\"color:#BF242A\">4.</span>満1万元で利用できる"
+          ]
+        },
+        {
+          "type": "got",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_50.png",
+          "title": "Cena Bが50％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。",
+            "【クーポン説明】利用可能数は10枚までです。\n使用回数が1回までです。\n他のクーポンと併用できません。"
+          ]
+        },
+        {
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_1000.png",
+          "title": "1000円オフ",
+          "subtitle": "残り：19枚",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【利用条件】有効期限／〜2022年10月31日（火）",
+            "【クーポン説明】利用可能数は30枚まで"
+          ]
+        },
+        {
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_30.png",
+          "title": "Cena Aが30％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        }
+      ],
+      "shop": [
+        "<img style=\"padding-top:2px;width:100%;background-size:100% 100%;\" src=\"https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/shop03.png\"/><img style=\"padding-top:20px;width:100%;background-size:100% 100%;\" src=\"https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/shop04.png\"/><div><div style=\"margin-top:12px;padding:0 12px;font-size:20px;font-weight:800;line-height:28px;color:#5d5d5d;\">活力炭焼酒場 炭吉三</div><div style=\"margin:13px 21px 0 0;padding:0 12px 18px;\"><div style=\"display:flex;flex-direction:row;margin-top:4px;\"><div style=\"font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;text-align:justify;text-align-last:justify;width:73px;\">電話番号</div><div style=\"width:27px;font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;\">:</div><div style=\"flex:1;font-size:17px;font-weight:400;line-height:34px;color:#5d5d5d;word-break:break-all;\">088-602-2250</div></div><div style=\"display:flex;flex-direction:row;margin-top:4px;\"><div style=\"font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;text-align:justify;text-align-last:justify;width:73px;\">営業時間</div><div style=\"width:27px;font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;\">:</div><div style=\"flex:1;font-size:17px;font-weight:400;line-height:34px;color:#5d5d5d;word-break:break-all;\">10:00～19:00</div></div><div style=\"display:flex;flex-direction:row;margin-top:4px;\"><div style=\"font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;text-align:justify;text-align-last:justify;width:73px;\">定休日</div><div style=\"width:27px;font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;\">:</div><div style=\"flex:1;font-size:17px;font-weight:400;line-height:34px;color:#5d5d5d;word-break:break-all;\">アミコに準ずる</div></div><div style=\"display:flex;flex-direction:row;margin-top:4px;\"><div style=\"font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;text-align:justify;text-align-last:justify;width:73px;\">駐車場</div><div style=\"width:27px;font-size:17px;font-weight:800;line-height:34px;color:#5d5d5d;\">:</div><div style=\"flex:1;font-size:17px;font-weight:400;line-height:34px;color:#5d5d5d;word-break:break-all;\">     無 （お店の目の前にコインパーキングがあります。※提携ではありません） </div></div></div></div>"
+      ],
+      "contact": {
+        "location": [139.5558767, 35.8029495],
+        "address": "〒352-0011  埼玉県新座市野火止5-2-13 B1",
+        "phone": "050-5494-0372",
+        "url": "https://www.mitsukoshi.mistore.jp/takamatsu/tokushima.html"
+      }
+    }
+  ],
+  "userCoupons": [
+    {
+      "userId": "220466263451897857",
+      "coupons": [
+        {
+          "shopId": 1,
+          "id": "00000331",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_10.png",
+          "title": "Cena Aが10％オフ",
+          "subtitle": "期限切れあと6日",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2022年10月17日（金）～2023年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00000456",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_50.png",
+          "title": "Cena Aが50％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00001024",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_20.png",
+          "title": "Cena Aが20％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00002048",
+          "type": "unused",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_5000.png",
+          "title": "5000円オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00004096",
+          "type": "unused",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_1000.png",
+          "title": "1000円オフ",
+          "subtitle": "期限切れあと3日",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00005476",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_10.png",
+          "title": "Cena Aが10％オフ",
+          "subtitle": "期限切れあと6日",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00006212",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_30.png",
+          "title": "Cena Aが30％オフ",
+          "subtitle": "期限切れあと13时",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00003966",
+          "type": "unused",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_20.png",
+          "title": "Cena Aが20％オフ",
+          "subtitle": "期限切れあと5分",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00001248",
+          "type": "unused",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_1000.png",
+          "title": "1000円オフ",
+          "subtitle": "期限切れあと48时",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00000536",
+          "type": "unused",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_1000.png",
+          "title": "1000円オフ",
+          "subtitle": "期限切れあと3日",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        }
+      ],
+      "historyCoupons": [
+        {
+          "shopId": 1,
+          "id": "00003072",
+          "type": "expired",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_10.png",
+          "title": "Cena Aが10％オフ",
+          "subtitle": "2021.12.27-2022.05.31",
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00001991",
+          "type": "used",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_10.png",
+          "title": "Cena Bが10％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00001234",
+          "type": "used",
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_50.png",
+          "title": "Cena Cが50％オフ",
+          "infos": [
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00008299",
+          "type": "expired",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_5000.png",
+          "title": "5000円オフ",
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        },
+        {
+          "shopId": 1,
+          "id": "00007854",
+          "type": "expired",
+          "cashCoupon": true,
+          "leftImgUrl": "https://miniapp-sample.s3.ap-northeast-1.amazonaws.com/pic/ticket_left_1000.png",
+          "title": "1000円オフ",
+          "subtitle": "2021.12.27-2022.05.31",
+          "subtitleWarn": true,
+          "hasDeadline": true,
+          "infos": [
+            "【応募期間】2021年12月17日（金）～2022年1月18日（火）",
+            "【利用条件】有効期限／〜2022年5月31日（火）",
+            "【イベント】女子会、夜の接待、デート、2次会、記念日、合コン、お一人様、同窓会、忘年会・新年会、歓迎会、送別会、打ち上げ・キックオフ、お祝い事、家族。"
+          ]
+        }
+      ]
+    }
+  ]
+}

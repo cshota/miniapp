@@ -1,0 +1,751 @@
+{
+  "openapi": "3.0.1",
+  "info":
+  {
+    "title": "mini-app-sample-api",
+    "description": "mini-app-sample-api",
+    "version": "v0.1"
+  },
+  "servers":
+  [
+    {
+      "url": "http://localhost:9080",
+      "description": "Generated server url"
+    }
+  ],
+  "tags":
+  [
+    {
+      "name": "HomePageController"
+    },
+    {
+      "name": "CouponManager"
+    },
+    {
+      "name": "ShopController"
+    },
+    {
+      "name": "AuthenticationController"
+    },
+    {
+      "name": "MessageController"
+    }
+  ],
+  "paths":
+  {
+    "/message/push":
+    {
+      "post":
+      {
+        "tags":
+        [
+          "MessageController"
+        ],
+        "summary": "push message",
+        "operationId": "pushMessage",
+        "requestBody":
+        {
+          "content":
+          {
+            "application/json":
+            {
+              "schema":
+              {
+                "$ref": "#/components/schemas/PushMessageDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/R"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shop/{id}":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "ShopController"
+        ],
+        "summary": "ShopDetail",
+        "operationId": "queryShop",
+        "parameters":
+        [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema":
+            {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/Shop"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/message/list":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "MessageController"
+        ],
+        "summary": "list message",
+        "operationId": "listMessage",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/R"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/index/rollingPictures":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "HomePageController"
+        ],
+        "summary": "RollingPicturesAdvertising",
+        "operationId": "rollingPictures",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/RollingAdvertising"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/index/coupons":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "HomePageController"
+        ],
+        "summary": "CouponList",
+        "operationId": "coupons",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/HomePageCoupon"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/index/candidates":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "HomePageController"
+        ],
+        "summary": "Candidates",
+        "operationId": "candidates",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/Candidates"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/coupon/myHistory":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "CouponManager"
+        ],
+        "summary": "MyCouponHistory",
+        "operationId": "queryMyCouponHistory",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/CustomerCouponHistory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/coupon/mine":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "CouponManager"
+        ],
+        "summary": "MyCoupon",
+        "operationId": "queryMyCoupon",
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/CustomerCoupon"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/sign":
+    {
+      "get":
+      {
+        "tags":
+        [
+          "AuthenticationController"
+        ],
+        "summary": "SignIn",
+        "operationId": "sign",
+        "parameters":
+        [
+          {
+            "name": "accessCode",
+            "in": "query",
+            "required": true,
+            "schema":
+            {
+              "type": "string"
+            }
+          }
+        ],
+        "responses":
+        {
+          "200":
+          {
+            "description": "OK",
+            "content":
+            {
+              "*/*":
+              {
+                "schema":
+                {
+                  "$ref": "#/components/schemas/SignInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components":
+  {
+    "schemas":
+    {
+      "PushMessageDTO":
+      {
+        "type": "object",
+        "properties":
+        {
+          "messageTitle":
+          {
+            "type": "string",
+            "description": "message title"
+          },
+          "messageBody":
+          {
+            "type": "string",
+            "description": "message body"
+          },
+          "clickPagePath":
+          {
+            "type": "string",
+            "description": "path when click"
+          }
+        }
+      },
+      "R":
+      {
+        "type": "object",
+        "properties":
+        {
+          "empty":
+          {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties":
+        {
+          "type": "object",
+          "description": "common response map"
+        },
+        "description": "common response map"
+      },
+      "ContactDetails":
+      {
+        "type": "object",
+        "properties":
+        {
+          "location":
+          {
+            "type": "array",
+            "description": "latitude and longitude",
+            "items":
+            {
+              "type": "number",
+              "description": "latitude and longitude",
+              "format": "double"
+            }
+          },
+          "address":
+          {
+            "type": "string",
+            "description": "address"
+          },
+          "phone":
+          {
+            "type": "string",
+            "description": "phone number"
+          },
+          "url":
+          {
+            "type": "string",
+            "description": "url"
+          }
+        },
+        "description": "contact details"
+      },
+      "Coupon":
+      {
+        "type": "object",
+        "properties":
+        {
+          "leftImgUrl":
+          {
+            "type": "string",
+            "description": "coupon image on the left"
+          },
+          "title":
+          {
+            "type": "string",
+            "description": "title"
+          },
+          "cashCoupon":
+          {
+            "type": "boolean",
+            "description": "is cash coupon"
+          },
+          "subtitle":
+          {
+            "type": "string",
+            "description": "sub title"
+          },
+          "hasDeadline":
+          {
+            "type": "boolean",
+            "description": "is there a deadline"
+          },
+          "infos":
+          {
+            "type": "array",
+            "description": "description",
+            "items":
+            {
+              "type": "string",
+              "description": "description"
+            }
+          },
+          "type":
+          {
+            "type": "string",
+            "description": "type"
+          }
+        },
+        "description": "shop coupons"
+      },
+      "Shop":
+      {
+        "type": "object",
+        "properties":
+        {
+          "id":
+          {
+            "type": "integer",
+            "description": "id",
+            "format": "int32"
+          },
+          "title":
+          {
+            "type": "string",
+            "description": "title"
+          },
+          "hot":
+          {
+            "type": "integer",
+            "description": "popularity",
+            "format": "int32"
+          },
+          "subtitle":
+          {
+            "type": "string",
+            "description": "sub title"
+          },
+          "imgUrl":
+          {
+            "type": "string",
+            "description": "img http url"
+          },
+          "distance":
+          {
+            "type": "string",
+            "description": "distance from here /m"
+          },
+          "products":
+          {
+            "type": "array",
+            "description": "shop products",
+            "items":
+            {
+              "type": "string",
+              "description": "shop products"
+            }
+          },
+          "coupons":
+          {
+            "type": "array",
+            "description": "shop coupons",
+            "items":
+            {
+              "$ref": "#/components/schemas/Coupon"
+            }
+          },
+          "shop":
+          {
+            "type": "array",
+            "description": "shop info",
+            "items":
+            {
+              "type": "string",
+              "description": "shop info"
+            }
+          },
+          "contact":
+          {
+            "$ref": "#/components/schemas/ContactDetails"
+          }
+        }
+      },
+      "AdvertisingInfo":
+      {
+        "type": "object",
+        "properties":
+        {
+          "shopId":
+          {
+            "type": "string",
+            "description": "shop id"
+          },
+          "leftImgUrl":
+          {
+            "type": "string",
+            "description": "shop image on the left"
+          }
+        },
+        "description": "rolling advertising list"
+      },
+      "RollingAdvertising":
+      {
+        "type": "object",
+        "properties":
+        {
+          "rollingPictures":
+          {
+            "type": "array",
+            "description": "rolling advertising list",
+            "items":
+            {
+              "$ref": "#/components/schemas/AdvertisingInfo"
+            }
+          }
+        }
+      },
+      "HomePageCoupon":
+      {
+        "type": "object",
+        "properties":
+        {
+          "coupons":
+          {
+            "type": "array",
+            "description": "coupon list",
+            "items":
+            {
+              "$ref": "#/components/schemas/HomePageCouponDetail"
+            }
+          }
+        }
+      },
+      "HomePageCouponDetail":
+      {
+        "type": "object",
+        "properties":
+        {
+          "shopId":
+          {
+            "type": "integer",
+            "description": "shop id",
+            "format": "int32"
+          },
+          "leftImgUrl":
+          {
+            "type": "string",
+            "description": "shop image on the left"
+          },
+          "title":
+          {
+            "type": "string",
+            "description": "shop title"
+          },
+          "hot":
+          {
+            "type": "integer",
+            "description": "shop popularity",
+            "format": "int32"
+          },
+          "distance":
+          {
+            "type": "string",
+            "description": "shop distance from here"
+          },
+          "imgUrl":
+          {
+            "type": "string",
+            "description": "shop image url"
+          }
+        },
+        "description": "coupon list"
+      },
+      "Candidates":
+      {
+        "type": "object",
+        "properties":
+        {
+          "candidates":
+          {
+            "type": "array",
+            "description": "candidates list",
+            "items":
+            {
+              "type": "string",
+              "description": "candidates list"
+            }
+          }
+        }
+      },
+      "CouponInfo":
+      {
+        "type": "object",
+        "properties":
+        {
+          "shopId":
+          {
+            "type": "integer",
+            "description": "shop id",
+            "format": "int32"
+          },
+          "id":
+          {
+            "type": "string",
+            "description": "coupon id"
+          },
+          "type":
+          {
+            "type": "string",
+            "description": "coupon type"
+          },
+          "cashCoupon":
+          {
+            "type": "boolean",
+            "description": "is cash coupon"
+          },
+          "leftImgUrl":
+          {
+            "type": "string",
+            "description": "coupon image on the left"
+          },
+          "title":
+          {
+            "type": "string",
+            "description": "title"
+          },
+          "subtitle":
+          {
+            "type": "string",
+            "description": "subtitle"
+          },
+          "hasDeadline":
+          {
+            "type": "boolean",
+            "description": "is there a deadline"
+          },
+          "infos":
+          {
+            "type": "array",
+            "description": "description",
+            "items":
+            {
+              "type": "string",
+              "description": "description"
+            }
+          }
+        },
+        "description": "history coupon list"
+      },
+      "CustomerCouponHistory":
+      {
+        "type": "object",
+        "properties":
+        {
+          "historyCoupons":
+          {
+            "type": "array",
+            "description": "history coupon list",
+            "items":
+            {
+              "$ref": "#/components/schemas/CouponInfo"
+            }
+          }
+        }
+      },
+      "CustomerCoupon":
+      {
+        "type": "object",
+        "properties":
+        {
+          "coupons":
+          {
+            "type": "array",
+            "description": "coupon list",
+            "items":
+            {
+              "$ref": "#/components/schemas/CouponInfo"
+            }
+          }
+        }
+      },
+      "SignInfo":
+      {
+        "type": "object",
+        "properties":
+        {
+          "jwt":
+          {
+            "type": "string",
+            "description": "jwt token"
+          },
+          "customerId":
+          {
+            "type": "string",
+            "description": "customer open id"
+          }
+        }
+      }
+    }
+  }
+}

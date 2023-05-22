@@ -1,0 +1,65 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "取引先クーポン",
+        "backgroundColorTop": "#BF242A"
+      }
+    },
+    {
+      "path": "pages/home/area",
+      "style": {
+        "navigationBarTitleText": "地域を選択"
+      }
+    },
+    {
+      "path": "pages/coupon/coupon",
+      "style": {
+        "navigationBarTitleText": "クーポン"
+      }
+    },
+    {
+      "path": "pages/history/history",
+      "style": {
+        "navigationBarTitleText": "履歴"
+      }
+    },
+    {
+      "path": "pages/shop/shop",
+      "style": {
+        "navigationBarTitleText": "店舗"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "マイページ"
+      }
+    },
+    {
+      "path": "pages/mine/favorite",
+      "style": {
+        "navigationBarTitleText": "お気に入り"
+      }
+    },
+    {
+      "path": "pages/mine/notice",
+      "style": {
+        "navigationBarTitleText": "お知らせ"
+      }
+    },
+    {
+      "path": "pages/mine/address",
+      "style": {
+        "navigationBarTitleText": "居住地設定"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "取引先クーポン",
+    "navigationBarBackgroundColor": "#BF242A",
+    "backgroundColor": "#F8F8F8"
+  }
+}

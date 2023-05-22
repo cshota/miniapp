@@ -1,0 +1,25 @@
+{
+  "name": "coupon",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "uni",
+    "build": "uni build --mode prod -p app && node ./scripts/wgt_build.js",
+    "build:dev": "uni build --mode dev -p app && node ./scripts/wgt_build.js dev",
+    "serve": "npm start"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-3040020220228001",
+    "@dcloudio/uni-app-plus": "3.0.0-alpha-3040020220228001",
+    "@dcloudio/uni-components": "3.0.0-alpha-3040020220228001",
+    "@dcloudio/uni-h5": "3.0.0-alpha-3040020220228001",
+    "uni-ajax": "2.4.4",
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "2.5.17",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3040020220228001",
+    "adm-zip": "^0.5.9",
+    "vite": "^2.9.8"
+  }
+}

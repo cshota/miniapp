@@ -1,0 +1,20 @@
+[
+  {
+    "pagePath": "../home/home",
+    "iconPath": "/static/tabbar01.png",
+    "selectedIconPath": "/static/tabbar01_active.png",
+    "text": "トップページ"
+  },
+  {
+    "pagePath": "../coupon/coupon",
+    "iconPath": "/static/tabbar02.png",
+    "selectedIconPath": "/static/tabbar02_active.png",
+    "text": "獲得済みクーポン一覧"
+  },
+  {
+    "pagePath": "../mine/mine",
+    "iconPath": "/static/tabbar03.png",
+    "selectedIconPath": "/static/tabbar03_active.png",
+    "text": "マイページ"
+  }
+]
