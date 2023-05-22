@@ -3,13 +3,13 @@
     {
       "path": "pages/home/home",
       "style": {
-        "navigationBarTitleText": "MINI_APP_TEMPLATE"
+        "navigationBarTitleText": "1A_テスト"
       }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "MINI_APP_TEMPLATE",
+    "navigationBarTitleText": "1A_テスト",
     "navigationBarBackgroundColor": "#D48831",
     "backgroundColor": "#F8F8F8"
   }
