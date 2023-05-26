@@ -1,10 +1,7 @@
 <template>
   <view class="coupon-bar-view">
     <view class="coupon-bar-flex-view">
-      <view
-        class="coupon-bar-item"
-        :class="{ active: currentName === 'discount' }"
-      >
+      <view class="coupon-bar-item" :class="{ active: currentName === 'discount' }">
         <view @tap="handleCouponItemClick('discount')">割引券</view>
         <view class="coupon-bar-badge">{{ discount }}</view>
       </view>
@@ -12,10 +9,7 @@
         <view @tap="handleCouponItemClick('cash')">現金券</view>
         <view class="coupon-bar-badge">{{ cash }}</view>
       </view>
-      <view
-        class="coupon-bar-item"
-        :class="{ active: currentName === 'expiredSoon' }"
-      >
+      <view class="coupon-bar-item" :class="{ active: currentName === 'expiredSoon' }">
         <view @tap="handleCouponItemClick('expiredSoon')">
           まもなく期限切れ
         </view>
@@ -87,10 +81,12 @@ watch(
   font-size: 0;
   box-shadow: 0px 2px 3.3px 0.3px rgba(0, 0, 0, 0.16);
 }
+
 .coupon-bar-flex-view {
   flex: 75%;
   display: flex;
 }
+
 .coupon-bar-item {
   flex: 1;
   position: relative;
@@ -108,10 +104,12 @@ watch(
   cursor: pointer;
   /* #endif */
 }
+
 .coupon-bar-item.active {
   border: 1px solid #bf242a;
   color: #bf242a;
 }
+
 .coupon-bar-badge {
   position: absolute;
   top: -6px;
@@ -124,6 +122,7 @@ watch(
   text-align: center;
   border-radius: 67px;
 }
+
 .coupon-bar-after {
   flex: 1 0 15%;
   font-size: 12px;
@@ -133,3 +132,4 @@ watch(
 }
 </style>
 <!--コメント-->
+<!--takeru-->
