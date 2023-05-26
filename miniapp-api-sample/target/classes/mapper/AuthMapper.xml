@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.scsk.miniapp.sample.api.dao.AuthDao">
+
+
+    <insert id="insert" parameterType="Customer">
+        insert into user_info
+        values (#{userId}, #{customerInfo}, #{createAt}, #{updateAt}, #{accessToken})
+    </insert>
+    <update id="update" parameterType="Customer">
+        update user_info
+        set customer_info = #{customerInfo},
+            access_token = #{accessToken},
+            update_at = #{updateAt}
+        where user_id = #{userId}
+    </update>
+    <select id="getByUserId" resultType="jp.co.scsk.miniapp.sample.api.entity.Customer">
+        select user_id,
+               customer_info,
+               access_token
+        from user_info
+        where user_id = #{userId}
+    </select>
+</mapper>
