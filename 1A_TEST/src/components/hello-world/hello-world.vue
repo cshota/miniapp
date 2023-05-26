@@ -1,12 +1,13 @@
+<!--bar-->
 <template>
   <view class="coupon-bar-view">
     <view class="coupon-bar-flex-view">
       <view class="coupon-bar-item" :class="{ active: currentName === 'discount' }">
-        <view @tap="handleCouponItemClick('discount')">割引券</view>
+        <view @tap="handleCouponItemClick('discount')">災害時</view>
         <view class="coupon-bar-badge">{{ discount }}</view>
       </view>
       <view class="coupon-bar-item" :class="{ active: currentName === 'cash' }">
-        <view @tap="handleCouponItemClick('cash')">現金券</view>
+        <view @tap="handleCouponItemClick('cash')">防災</view>
         <view class="coupon-bar-badge">{{ cash }}</view>
       </view>
       <view class="coupon-bar-item" :class="{ active: currentName === 'expiredSoon' }">
@@ -18,6 +19,7 @@
     </view>
     <view class="coupon-bar-after" @tap="handleHistoryClick">履歴</view>
   </view>
+  <!---->
 </template>
 
 <script setup lang="ts">
@@ -131,6 +133,4 @@ watch(
   text-align: right;
 }
 </style>
-<!--コメント-->
-<!--takeru-->
-<!--takeru-->
+
