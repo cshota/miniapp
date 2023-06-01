@@ -1,0 +1,72 @@
+server:
+    port: 9080
+
+spring:
+    jackson:
+        time-zone: GMT+9
+        date-format: yyyy/MM/dd HH:ss:mm
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        #PostgreSQL Config
+        url: {DATABASE_URL}
+        driver-class-name: org.postgresql.Driver
+        druid:
+            username: {DATABASE_USERNAME}
+            password: {DATABASE_PASSWORD}
+            initial-size: 0
+            min-idle: 5
+            max-active: 10
+            max-wait: 60000
+            filters: stat,wall
+            web-stat-filter:
+                enabled: true
+                url-pattern: /*
+                exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+                session-stat-enable: true
+                session-stat-max-count: 10
+                principal-session-name: session_name
+                principal-cookie-name: cookie_name
+                profile-enable:
+            stat-view-servlet:
+                enabled: true
+                url-pattern: /druid/*
+                reset-enable: false
+                allow:
+                deny:
+            filter:
+                stat:
+                    log-slow-sql: true
+                    slow-sql-millis: 100
+                wall:
+                    enabled: true
+                    config:
+                        truncate-allow: false
+                        create-table-allow: false
+                        alter-table-allow: false
+                        drop-table-allow: false
+                    log-violation: true
+                    throw-exception: false
+
+
+logging:
+    level:
+        root: info
+        jp.co: debug
+
+miniapp-api:
+    host: scskminiapp.com
+    port: -1
+    scheme: https
+    access-key: {MINIAPP_ACCESS_KEY}
+    secret-key: {MINIAPP_SECRET_KEY}
+    timeout: 600
+    baseurl: api/
+
+mybatis:
+    mapper-locations: classpath:mapper/**/*Mapper.xml
+    type-aliases-package: jp.co.scsk.miniapp.sample.api.entity
+    configuration:
+        map-underscore-to-camel-case: true
+springdoc:
+    api-docs:
+        enabled: false
