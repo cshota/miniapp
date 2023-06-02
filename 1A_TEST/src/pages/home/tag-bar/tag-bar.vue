@@ -1,25 +1,21 @@
-<!--bar-->
 <template>
-  <view class="coupon-bar-view">
-    <view class="coupon-bar-flex-view">
-      <view class="coupon-bar-item" :class="{ active: currentName === 'discount' }">
-        <view @tap="handleCouponItemClick('discount')">災害時</view>
-        <view class="coupon-bar-badge">{{ discount }}</view>
-      </view>
-      <view class="coupon-bar-item" :class="{ active: currentName === 'cash' }">
-        <view @tap="handleCouponItemClick('cash')">防災</view>
-        <view class="coupon-bar-badge">{{ cash }}</view>
-      </view>
-      <view class="coupon-bar-item" :class="{ active: currentName === 'expiredSoon' }">
-        <view @tap="handleCouponItemClick('expiredSoon')">
-          まもなく期限切れ
+    <view class="tag-bar-view">
+    <!--tag-barの設定-->
+        <view class="tag-bar-flex-view">
+        <!--tag-barの外観設定-->
+        <view
+        class="tag-bar-item"
+        :class="{ active: currentName === 'disaster' }"
+        >
+        <view @tap="handleCouponItemClick('disaster')">災害時</view>
+        <view class="tag-bar-badge">{{ disaster }}</view>
         </view>
-        <view class="coupon-bar-badge">{{ expiredSoon }}</view>
-      </view>
+        <view class="tag-bar-item" :class="{ active: currentName === 'predisaster' }">
+        <view @tap="handleCouponItemClick('predisaster')">防災</view>
+        <view class="tag-bar-badge">{{ predisaster }}</view>
+        </view>
+        </view>
     </view>
-    <view class="coupon-bar-after" @tap="handleHistoryClick">履歴</view>
-  </view>
-  <!---->
 </template>
 
 <script setup lang="ts">
@@ -28,19 +24,18 @@ import { ref, watch } from "vue";
 const props = withDefaults(
   defineProps<{
     current?: string;
-    discount?: number;
-    cash?: number;
-    expiredSoon?: number;
+    disaster?: number;
+    predisaster?: number;
   }>(),
   {
-    current: "discount",
+    current: "disaster",
     discount: 0,
     cash: 0,
     expiredSoon: 0,
   }
 );
 
-const currentName = ref<string>(props.current || "discount");
+const currentName = ref<string>(props.current || "disaster");
 
 const emit = defineEmits<{
   (e: "clickCouponItem", name: string): void;
@@ -53,8 +48,6 @@ const handleCouponItemClick = (name: string) => {
   }
 };
 
-const handleHistoryClick = () => emit("clickHistory");
-
 watch(
   () => props.current,
   (val) => {
@@ -66,7 +59,7 @@ watch(
 </script>
 
 <style scoped>
-.coupon-bar-view {
+.tag-bar-view {
   display: flex;
   position: fixed;
   align-items: center;
@@ -83,13 +76,11 @@ watch(
   font-size: 0;
   box-shadow: 0px 2px 3.3px 0.3px rgba(0, 0, 0, 0.16);
 }
-
-.coupon-bar-flex-view {
+.tag-bar-flex-view {
   flex: 75%;
   display: flex;
 }
-
-.coupon-bar-item {
+.tag-bar-item {
   flex: 1;
   position: relative;
   margin: 13px 3px 11px;
@@ -106,13 +97,11 @@ watch(
   cursor: pointer;
   /* #endif */
 }
-
-.coupon-bar-item.active {
+.tag-bar-item.active {
   border: 1px solid #bf242a;
   color: #bf242a;
 }
-
-.coupon-bar-badge {
+.tag-bar-badge {
   position: absolute;
   top: -6px;
   right: 0;
@@ -124,8 +113,7 @@ watch(
   text-align: center;
   border-radius: 67px;
 }
-
-.coupon-bar-after {
+.tag-bar-after {
   flex: 1 0 15%;
   font-size: 12px;
   font-weight: 500;
@@ -133,4 +121,3 @@ watch(
   text-align: right;
 }
 </style>
-
