@@ -1,25 +1,13 @@
 <template>
-  
-  <page-navbar :current="0" @clickBarItem="redirectToByIndex" />
-  
-  
-  
+  <view class="content">
+    <image class="logo" src="/static/logo.png" />
+    <hello-world :title="title" />
+  </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { onLoad } from "@dcloudio/uni-app";
 const title = ref("Hello Vue");
-
-const swiperLoading = ref<boolean>(false);
-const loading = ref<boolean>(false);
-
-const redirectToByIndex = (path: string) => {
-  uni.reLaunch({
-    url: path,
-  });
-};
-
 </script>
 
 <style>
@@ -39,4 +27,3 @@ const redirectToByIndex = (path: string) => {
   margin-bottom: 50rpx;
 }
 </style>
-

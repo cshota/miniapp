@@ -1,19 +1,16 @@
-{ "":"画面ごとのファイル割り当て設定",
+{
   "pages": [
     {
       "path": "pages/home/home",
       "style": {
-        "navigationBarTitleText": "1A_テスト"
+        "navigationBarTitleText": "1A_TEST"
       }
     }
-    
   ],
-
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "1A_テスト",
-    "navigationBarBackgroundColor": "#B1221A",
+    "navigationBarTitleText": "1A_TEST",
+    "navigationBarBackgroundColor": "#D48831",
     "backgroundColor": "#F8F8F8"
   }
-  
 }
