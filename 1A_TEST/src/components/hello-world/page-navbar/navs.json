@@ -9,12 +9,6 @@
       "pagePath": "../home/home",
       "iconPath": "/static/soslogo.png",
       "selectedIconPath": "/static/soslogo.png",
-      "text": "マップ"
-    },
-    {
-      "pagePath": "../home/home",
-      "iconPath": "/static/soslogo.png",
-      "selectedIconPath": "/static/soslogo.png",
       "text": "検索"
     }
   ]
