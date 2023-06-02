@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <image class="logo" src="/static/soslogo.png" />
     <hello-world :title="title" />
   </view>
 </template>

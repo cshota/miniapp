@@ -1,5 +1,6 @@
 {
-  "pages": [
+  "":"ルーティング情報はここ ",
+    "pages": [
     {
       "path": "pages/home/home",
       "style": {

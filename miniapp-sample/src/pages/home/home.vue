@@ -1,18 +1,24 @@
 <template>
+  <!--検索バー-->
   <page-searchbar
     :city="city"
     @search="reloadCoupon"
     @clickCity="handleCityChoose"
   />
+  <!--下に引っ張って更新-->
   <spin-loading v-if="swiperLoading" />
+  <!--画面上部スライドショー-->
   <lite-swiper
     v-else
     :imgUrls="rollingPictures.map((pic) => pic.leftImgUrl)"
     @clickImgItem="handleClickSwiper"
   />
+  <!--タグバー-->
   <tag-bar :listItems="listItems" @clickTagItem="handleClickTagItem" />
+  <!--下に引っ張って更新-->
   <spin-loading v-if="loading" />
   <template v-else>
+    <!--各店舗情報-->
     <mall-ticket
       v-for="(coupon, index) in coupons"
       :key="index"
@@ -25,6 +31,7 @@
     />
   </template>
   <view style="height: 100px"></view>
+  <!--下部ナビゲーションバー-->
   <page-navbar :current="0" @clickBarItem="redirectToByIndex" />
 </template>
 
