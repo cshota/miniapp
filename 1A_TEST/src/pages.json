@@ -1,4 +1,4 @@
-{
+{ "":"画面ごとのファイル割り当て設定",
   "pages": [
     {
       "path": "pages/home/home",
@@ -6,11 +6,14 @@
         "navigationBarTitleText": "SOSアプリ"
       }
     }
+    
   ],
+
   "globalStyle": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "1A_テスト",
-    "navigationBarBackgroundColor": "#D48831",
+    "navigationBarBackgroundColor": "#B1221A",
     "backgroundColor": "#F8F8F8"
   }
+  
 }
