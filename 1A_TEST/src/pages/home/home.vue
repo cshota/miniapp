@@ -1,10 +1,6 @@
 <template>
   <view class="content">
-<<<<<<< HEAD
     <image class="logo" src="/static/soslogo.png" />
-=======
-    <image class="logo" src="/static/logo.png" />
->>>>>>> 12af5ea5c06334d641b090c793bdd9f8d0f9aa39
     <hello-world :title="title" />
   </view>
 </template>
