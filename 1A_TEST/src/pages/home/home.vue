@@ -1,5 +1,5 @@
 <template>
-  <!-- ナビゲーションバー -->
+  <!-- ナビゲーションバー-->
   <page-navbar :current="0" @clickBarItem = "redirectToByIndex"/>
 </template>
 
