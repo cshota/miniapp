@@ -1,0 +1,20 @@
+[
+  {
+    "pagePath": "../home/home",
+    "iconPath": "/static/tabbar01.png",
+    "selectedIconPath": "/static/soslogo.png",
+    "text": "ホーム"
+  },
+  {
+    "pagePath": "../home/home",
+    "iconPath": "/static/tabbar02.png",
+    "selectedIconPath": "/static/soslogo.png",
+    "text": "検索"
+  },
+  {
+    "pagePath": "../home/home",
+    "iconPath": "/static/tabbar03.png",
+    "selectedIconPath": "/static/soslogo.png",
+    "text": "検索"
+  }
+]

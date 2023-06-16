@@ -3,14 +3,14 @@
     {
       "path": "pages/home/home",
       "style": {
-        "navigationBarTitleText": "1A_TEST"
+        "navigationBarTitleText": "SOSアプリ"
       }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "1A_TEST",
-    "navigationBarBackgroundColor": "#D48831",
+    "navigationBarBackgroundColor": "#ca2e2e",
     "backgroundColor": "#F8F8F8"
   }
 }

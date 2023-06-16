@@ -1,13 +1,22 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/soslogo.png" />
-    <hello-world :title="title" />
-  </view>
+  
+  <!-- サーチバー -->
+  <page-searchbar />
+  <!-- マップ -->
+  <page-map />
+  <!-- ナビゲーションバー -->
+  <page-navbar :current="0" @clickBarItem = "redirectToByIndex"/>
+
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 const title = ref("Hello Vue");
+
+const redirectToByIndex = () => {
+  alert();
+}
+
 </script>
 
 <style>
