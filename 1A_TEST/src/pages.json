@@ -3,13 +3,21 @@
     {
       "path": "pages/home/home",
       "style": {
+<<<<<<< Updated upstream
         "navigationBarTitleText": "1A_TEST"
+=======
+<<<<<<< HEAD
+        "navigationBarTitleText": "SOSアプリ"
+=======
+        
+>>>>>>> 12af5ea5c06334d641b090c793bdd9f8d0f9aa39
+>>>>>>> Stashed changes
       }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "1A_TEST",
+    "navigationBarTitleText": "SOSアプリ",
     "navigationBarBackgroundColor": "#D48831",
     "backgroundColor": "#F8F8F8"
   }
