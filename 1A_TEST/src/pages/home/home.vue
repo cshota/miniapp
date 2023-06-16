@@ -25,9 +25,9 @@ const redirectToByIndex = () => {
 .logo {
   height: 290rpx;
   width: 290rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 250rpx;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 50rpx;
 }
 </style>

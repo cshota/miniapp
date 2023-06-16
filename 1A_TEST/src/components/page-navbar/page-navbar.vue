@@ -66,9 +66,9 @@ watch(
   position: fixed;
   left: 0;
   right: 0;
-  height: 60px;
-  height: calc(60px + env(safe-area-inset-bottom));
-  height: calc(60px + constant(safe-area-inset-bottom));
+  height: 40px;
+  height: calc(40px + env(safe-area-inset-bottom));
+  height: calc(40px + constant(safe-area-inset-bottom));
   bottom: 0;
   padding-bottom: 0;
   padding-bottom: env(safe-area-inset-bottom);
@@ -82,9 +82,9 @@ watch(
   box-sizing: border-box;
   /* #endif */
   flex-direction: row;
-  height: 60px;
-  height: calc(60px + env(safe-area-inset-bottom));
-  height: calc(60px + constant(safe-area-inset-bottom));
+  height: 40px;
+  height: calc(40px + env(safe-area-inset-bottom));
+  height: calc(40px + constant(safe-area-inset-bottom));
   overflow: hidden;
   /* #ifdef H5 */
   cursor: pointer;
@@ -109,8 +109,8 @@ watch(
   height: 38px;
 }
 .page-navbar-item__image {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
 }
 .page-navbar-item__text {
   margin-bottom: 6px;
