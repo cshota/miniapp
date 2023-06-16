@@ -73,7 +73,7 @@ watch(
   padding-bottom: 0;
   padding-bottom: env(safe-area-inset-bottom);
   padding-bottom: constant(safe-area-inset-bottom);
-  background: #ff4848;
+  background: #ff0000;
   box-shadow: 0px -0.6px 3.3px 0.3px rgba(0, 0, 0, 0.1);
 }
 .page-navbar-view {
