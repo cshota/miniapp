@@ -25,4 +25,3 @@
     color: #ff4343;
   }
   </style>
-  
