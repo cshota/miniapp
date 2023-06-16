@@ -2,19 +2,19 @@
   {
     "pagePath": "../home/home",
     "iconPath": "/static/tabbar01.png",
-    "selectedIconPath": "/static/soslogo.png",
-    "text": "ホーム"
+    "selectedIconPath": "/static/home.png",
+    "text": ""
   },
   {
     "pagePath": "../home/home",
     "iconPath": "/static/tabbar02.png",
-    "selectedIconPath": "/static/soslogo.png",
-    "text": "検索"
+    "selectedIconPath": "/static/plus.png",
+    "text": ""
   },
   {
     "pagePath": "../home/home",
     "iconPath": "/static/tabbar03.png",
-    "selectedIconPath": "/static/soslogo.png",
-    "text": "検"
+    "selectedIconPath": "/static/search.png",
+    "text": ""
   }
 ]
