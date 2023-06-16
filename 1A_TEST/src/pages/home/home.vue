@@ -1,22 +1,13 @@
 <template>
-  
-  <!-- サーチバー -->
-  <page-searchbar />
-  <!-- マップ -->
-  <page-map />
-  <!-- ナビゲーションバー -->
-  <page-navbar :current="0" @clickBarItem = "redirectToByIndex"/>
-
+  <view class="content">
+    <image class="logo" src="/static/soslogo.png" />
+    <hello-world :title="title" />
+  </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 const title = ref("Hello Vue");
-
-const redirectToByIndex = () => {
-  alert();
-}
-
 </script>
 
 <style>
@@ -27,12 +18,13 @@ const redirectToByIndex = () => {
   justify-content: center;
 }
 
-.logo {
-  height: 290rpx;
-  width: 290rpx;
-  margin-top: 200rpx;
+.soslogo {
+  height: 270rpx;
+  width: 270rpx;
+  margin-top: 100rpx;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50rpx;
 }
 </style>
+

@@ -9,8 +9,8 @@
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "1A_TEST",
-    "navigationBarBackgroundColor": "#ca2e2e",
+    "navigationBarTitleText": "SOSアプリ",
+    "navigationBarBackgroundColor": "#D48831",
     "backgroundColor": "#F8F8F8"
   }
 }
