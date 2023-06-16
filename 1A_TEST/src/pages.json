@@ -10,7 +10,7 @@
   "globalStyle": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "1A_TEST",
-    "navigationBarBackgroundColor": "#D48831",
+    "navigationBarBackgroundColor": "#ff4848",
     "backgroundColor": "#F8F8F8"
   }
 }
