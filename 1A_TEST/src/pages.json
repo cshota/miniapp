@@ -5,6 +5,12 @@
       "style": {
         "navigationBarTitleText": "SOSアプリ"
       }
+    },
+    {
+      "path":"pages/home/search"
+      "style": {
+        "navigationBarTitleText": "SOSアプリ"
+      }
     }
   ],
   "globalStyle": {
