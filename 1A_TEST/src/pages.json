@@ -7,7 +7,7 @@
       }
     },
     {
-      "path":"pages/home/search"
+      "path":"pages/home/search",
       "style": {
         "navigationBarTitleText": "SOSアプリ"
       }
