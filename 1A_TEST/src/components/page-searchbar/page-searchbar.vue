@@ -6,7 +6,7 @@
         class="page-searchbar-search-input"
         v-model="searchText"
         confirm-type="search"
-        placeholder="店舗名、食材名を入力"
+        placeholder="キーワードを入力"
         placeholder-style="font-size:13px;font-weight:500;color:#bbb"
         @confirm="onSearch"
       />

@@ -1,21 +1,24 @@
 {
   "pages": [
     {
-      "path": "pages/home/home",
-      "style": {
-        "navigationBarTitleText": "SOSアプリ"
+      "path": "pages/home/home"
+    },
+    {
+      "path":"pages/home/search",
+      "style":{
+        "navigationBarTitleText":"検索"
       }
     },
     {
-      "path":"pages/home/search"
-      "style": {
-        "navigationBarTitleText": "SOSアプリ"
+      "path":"pages/home/plus",
+      "style":{
+        "navigationBarTitleText":"投稿"
       }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "1A_TEST",
+    "navigationBarTitleText": "SOSアプリ",
     "navigationBarBackgroundColor": "#ff0000",
     "backgroundColor": "#F8F8F8"
   }

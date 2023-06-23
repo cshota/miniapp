@@ -17,6 +17,6 @@ onHide(() => {
 
 <style>
 page {
-  background: #f8f8f8;
+  background: #4f4a43;
 }
 </style>

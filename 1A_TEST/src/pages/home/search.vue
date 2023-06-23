@@ -7,10 +7,6 @@
 import { ref } from "vue";
 const title = ref("Hello Vue");
 
-const redirectToByIndex = () => {
-  alert();
-}
-
 </script>
 
 <style>

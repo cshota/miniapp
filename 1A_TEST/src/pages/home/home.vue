@@ -2,6 +2,11 @@
   <!-- ナビゲーションバー -->
   <page-navbar :current="0" @clickBarItem = "redirectToByIndex"/>
 
+  <router-link to="./search.vue" active-class="selected-link">飲料</router-link>
+  <router-view></router-view>
+  <router-link to="./search.vue" active-class="selected-link">食料</router-link>
+  <router-link to="./search.vue" active-class="selected-link">あ</router-link>
+  <router-link to="./search.vue" active-class="selected-link">い</router-link>
 </template>
 
 <script setup lang="ts">
