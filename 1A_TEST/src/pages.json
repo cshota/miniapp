@@ -1,7 +1,10 @@
 {
   "pages": [
     {
-      "path": "pages/home/home"
+      "path": "pages/home/home",
+      "style":{
+        "navigationBarTitleText":"SOSアプリ"
+      }
     },
     {
       "path":"pages/home/search",

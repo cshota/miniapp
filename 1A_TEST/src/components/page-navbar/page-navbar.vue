@@ -1,122 +1,64 @@
 <template>
-  <view>
-    <view class="page-navbar-view">
-      <view
-        v-for="(item, index) in list"
-        class="page-navbar-item"
-        :key="index"
-        @tap="onTabbarClick(index)"
-      >
-        <view class="page-navbar-item__icon">
-          <image
-            v-if="index === currentIndex"
-            class="page-navbar-item__image"
-            :src="item.selectedIconPath"
-          />
-          <image v-else class="page-navbar-item__image" :src="item.iconPath" />
-        </view>
-        <text class="page-navbar-item__text">{{ item.text }}</text>
-      </view>
-    </view>
-  </view>
+  <nav class="navigation-bar">
+    <ul>
+      <li v-for="(item, index) in navigationItems" :key="index" @click="navigate(item.path)">
+        {{ item.label }}
+      </li>
+    </ul>
+  </nav>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-<script setup lang="ts">
-import { ref, watch } from "vue";
-import navs from "./navs.json";
+export default defineComponent({
+  data() {
+    return {
+      navigationItems: [
+        { label: 'home', path: '/' },
+        { label: 'SOS', path: '../../pages/home/plus.vue' },
+        { label: 'search', path: '../../pages/home/search.vue' }
+      ]
+    };
+  },
+  methods: {
+    navigate(path: string) {
+      // ページ遷移の処理を行う
+      // 例えば、Vue Router を使用してページを遷移させる場合は以下のようにします
+      // this.$router.push(path);
+      this.$router.push("../../pages/home/home.vue")
+      console.log('Navigate to:', path);
+      
 
-const props = defineProps<{
-  items?: {
-    pagePath: string;
-    selectedIconPath: string;
-    iconPath: string;
-    text: string;
-  }[];
-  current: number;
-}>();
-
-const list = props.items || navs;
-
-const currentIndex = ref<number>(props.current || 0);
-
-const emit = defineEmits<{
-  (e: "clickBarItem", path: string, index: number): void;
-}>();
-
-const onTabbarClick = (index: number) => {
-  if (currentIndex.value !== index) {
-    currentIndex.value = index;
-    emit("clickBarItem", list[index].pagePath, index);
-  }
-};
-
-watch(
-  () => props.current,
-  (val) => {
-    if (val !== currentIndex.value) {
-      currentIndex.value = val;
     }
   }
-);
+});
 </script>
 
+
 <style scoped>
-.page-navbar-view {
+.navigation-bar {
+  background-color: #f42828;
+  padding: 10px;
   position: fixed;
-  left: 0;
-  right: 0;
-  height: 40px;
-  height: calc(40px + env(safe-area-inset-bottom));
-  height: calc(40px + constant(safe-area-inset-bottom));
-  bottom: 0;
-  padding-bottom: 0;
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-bottom: constant(safe-area-inset-bottom);
-  background: #378f61;
-  box-shadow: 0px -0.6px 3.3px 0.3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  bottom: 0px;
+  font-size: 10;
+  opacity: 0.9;
+  z-index: 99;
 }
-.page-navbar-view {
-  /* #ifndef APP-NVUE */
+
+.navigation-bar ul {
+  list-style-type: none;
   display: flex;
-  box-sizing: border-box;
-  /* #endif */
-  flex-direction: row;
-  height: 40px;
-  height: calc(40px + env(safe-area-inset-bottom));
-  height: calc(40px + constant(safe-area-inset-bottom));
-  overflow: hidden;
-  /* #ifdef H5 */
-  cursor: pointer;
-  /* #endif */
-}
-.page-navbar-item {
-  /* #ifndef APP-NVUE */
-  display: inline-flex;
-  box-sizing: border-box;
-  /* #endif */
-  position: relative;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 10;
+  padding: 0;
 }
-.page-navbar-item__icon {
-  display: inline-block;
-  position: relative;
-  margin-top: 9px;
-  width: 38px;
-  height: 38px;
-}
-.page-navbar-item__image {
-  width: 30px;
-  height: 30px;
-}
-.page-navbar-item__text {
-  margin-bottom: 6px;
-  flex: 1;
-  font-size: 8px;
-  line-height: normal;
-  text-align: center;
+
+.navigation-bar li {
+  cursor: pointer;
+  font-weight: bold;
 }
 </style>

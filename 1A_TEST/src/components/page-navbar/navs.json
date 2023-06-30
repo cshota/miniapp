@@ -3,18 +3,18 @@
     "pagePath": "../home/home",
     "iconPath": "/static/home0.png",
     "selectedIconPath": "/static/home.png",
-    "text": "Home"
+    "text": ""
   },
   {
-    "pagePath": "../home/home",
+    "pagePath": "../home/plus",
     "iconPath": "/static/plus0.png",
     "selectedIconPath": "/static/plus.png",
-    "text": "Add"
+    "text": ""
   },
   {
-    "pagePath": "../home/home",
+    "pagePath": "../home/search",
     "iconPath": "/static/search0.png",
     "selectedIconPath": "/static/search.png",
-    "text": "Search"
+    "text": ""
   }
 ]
