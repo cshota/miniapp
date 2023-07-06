@@ -17,6 +17,42 @@
       "style":{
         "navigationBarTitleText":"投稿"
       }
+    },
+    {
+      "path":"pages/home/home2",
+      "style":{
+        "navigationBarTitleText":"SOSアプリ"
+      }
+    },
+    {
+      "path":"pages/genre/drink",
+      "style":{
+        "navigationBarTitleText":"飲料"
+      }
+    },
+    {
+      "path":"pages/genre/foods",
+      "style":{
+        "navigationBarTitleText":"食料"
+      }
+    },
+    {
+      "path":"pages/genre/goods",
+      "style":{
+        "navigationBarTitleText":"持ち物"
+      }
+    },
+    {
+      "path":"pages/genre/other",
+      "style":{
+        "navigationBarTitleText":"その他"
+      }
+    },
+    {
+      "path":"pages/home/plus2",
+      "style":{
+        "navigationBarTitleText":"災害について投稿"
+      }
     }
   ],
   "globalStyle": {

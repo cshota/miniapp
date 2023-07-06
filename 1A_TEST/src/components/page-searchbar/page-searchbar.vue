@@ -15,7 +15,7 @@
 
 <style scoped>
 .search-bar-container {
-  position:absolute;top:0;
+  top:0;
   display: flex;
   display: -webkit-flex;
   -webkit-justigy-content:center;
@@ -28,6 +28,8 @@
   flex: 1;
   padding: 10px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .search-button {
