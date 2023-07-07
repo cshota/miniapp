@@ -1,37 +1,37 @@
 <template>
   <form @submit.prevent="handleSubmit">
-    <label for="type">Type:</label>
+    <label for="type">投稿タイプ:</label>
     <select id="type" v-model="type">
-      <option value="Post">Post</option>
-      <option value="Comment">Comment</option>
+      <option value="Post">災害</option>
+      <option value="Comment">防災</option>
       <!-- 他のオプションをここに追加 -->
     </select>
 
-    <label for="genre">Genre:</label>
+    <label for="genre">ジャンル:</label>
     <select id="genre" v-model="genre">
-      <option value="General">General</option>
-      <option value="Discussion">Discussion</option>
+      <option value="General">飲料</option>
+      <option value="Discussion">食料</option>
       <!-- 他のオプションをここに追加 -->
     </select>
 
-    <label for="prefecture">Prefecture:</label>
+    <label for="prefecture">都道府県:</label>
     <select id="prefecture" v-model="prefecture">
-      <option value="Tokyo">Tokyo</option>
-      <option value="Osaka">Osaka</option>
+      <option value="Tokyo">東京</option>
+      <option value="Osaka">大阪</option>
       <!-- 他のオプションをここに追加 -->
     </select>
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" v-model="name" />
+    <label for="name">名前:</label>
+    <input type="text" id="name" v-model="name" style="background-color: white;" />
 
-    <label for="content">Content:</label>
-    <textarea id="content" v-model="content"></textarea>
+    <label for="content">内容:</label>
+    <textarea id="content" v-model="content" style="background-color: white;"></textarea>
 
     <button type="submit">Submit</button>
   </form>
 </template>
 
-<script>
+<script lang="ts">
 import { createObjectCsvWriter } from 'csv-writer';
 
 export default {
@@ -42,13 +42,13 @@ export default {
       prefecture: 'Tokyo',
       name: '',
       content: '',
-      posts: [],
+      posts: [] as { type: string, genre: string, prefecture: string, name: string, date: string, content: string }[],
     };
   },
   methods: {
-    writeCSVFile(filename, data) {
+    writeCSVFile(data: { type: string, genre: string, prefecture: string, name: string, date: string, content: string }[]) {
       const csvWriter = createObjectCsvWriter({
-        path: '../../data/post',
+        path: `../../data/post`,
         header: [
           { id: 'type', title: 'Type' },
           { id: 'genre', title: 'Genre' },
@@ -75,7 +75,7 @@ export default {
       });
 
       // CSVファイルにデータを書き込む
-      this.writeCSVFile('posts.csv', this.posts)
+      this.writeCSVFile(this.posts)
         .then(() => {
           console.log('CSV file written successfully.');
           this.type = 'Post';
@@ -84,7 +84,7 @@ export default {
           this.name = '';
           this.content = '';
         })
-        .catch((error) => {
+        .catch((error: Error) => {
           console.error('Error:', error);
         });
     },
