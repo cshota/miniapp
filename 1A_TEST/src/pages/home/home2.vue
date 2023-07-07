@@ -98,25 +98,25 @@ uni.navigateTo({
 //ジャンル1へ
 const link11 = () => {
 uni.navigateTo({
-    url: "",
+    url: "../genre/drink",
 })
 }
 //ジャンル2へ
 const link12 = () => {
 uni.navigateTo({
-    url: "",
+    url: "../genre/foods",
 })
 }
 //ジャンル3へ
 const link13 = () => {
 uni.navigateTo({
-    url: "",
+    url: "../genre/goods",
 })
 }
 //ジャンル4へ
 const link14 = () => {
 uni.navigateTo({
-    url: "",
+    url: "../genre/other",
 })
 }
 //災害ホームへ
