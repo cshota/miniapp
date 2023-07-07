@@ -28,25 +28,12 @@
     <textarea id="content" v-model="content" style="background-color: white;"></textarea>
 
     <button type="submit">Submit</button>
-    <div>
-      <button type="primary" class="hello-button" @click="count++">
-        カウントは：{{ count }}
-      </button>
-    </div>
   </form>
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
 import { createObjectCsvWriter } from 'csv-writer';
-
-const link55 = () => {
-  uni.navigateTo({
-    url: './home.vue',
-  })
-}
-defineProps<{ title: string }>();
-const count = ref(0);
+import fs from 'fs';
 
 export default {
   data() {
@@ -56,13 +43,13 @@ export default {
       prefecture: 'Tokyo',
       name: '',
       content: '',
-      posts: [] as { type: string, genre: string, prefecture: string, name: string, date: string, content: string }[],
+      posts: [] as { type: string; genre: string; prefecture: string; name: string; date: string; content: string }[],
     };
   },
   methods: {
-    writeCSVFile(data: { type: string, genre: string, prefecture: string, name: string, date: string, content: string }[]) {
+    writeCSVFile(data: { type: string; genre: string; prefecture: string; name: string; date: string; content: string }[]) {
       const csvWriter = createObjectCsvWriter({
-        path: `../../data/post`,
+        path: '../../data/post.csv',
         header: [
           { id: 'type', title: 'Type' },
           { id: 'genre', title: 'Genre' },
