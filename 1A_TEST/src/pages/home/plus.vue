@@ -28,11 +28,25 @@
     <textarea id="content" v-model="content" style="background-color: white;"></textarea>
 
     <button type="submit">Submit</button>
+    <div>
+      <button type="primary" class="hello-button" @click="count++">
+        カウントは：{{ count }}
+      </button>
+    </div>
   </form>
 </template>
 
 <script lang="ts">
+import { ref } from 'vue';
 import { createObjectCsvWriter } from 'csv-writer';
+
+const link55 = () => {
+  uni.navigateTo({
+    url: './home.vue',
+  })
+}
+defineProps<{ title: string }>();
+const count = ref(0);
 
 export default {
   data() {
