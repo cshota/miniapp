@@ -54,6 +54,12 @@
         "navigationBarTitleText":"災害について投稿"
       }
     }
+    // {
+    //   "path":"pages/home/login",
+    //   "style":{
+    //     "navigationBarTitleText":"ログイン"
+    //   }
+    // }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
