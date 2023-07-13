@@ -23,7 +23,7 @@
     <div>
       <label for="prefecture">都道府県:</label>
         <select id="prefecture" v-model="prefecture">
-      <option value="null">選択してください</option>
+      <option value="非公開">選択してください</option>
       <option value="北海道">北海道</option>
       <option value="青森県">青森県</option>
       <option value="岩手県">岩手県</option>
@@ -82,7 +82,7 @@
 
     <div>
       <label for="content"></label>
-        <textarea id="content" v-model="content" style="background-color: white;" placeholder="投稿内容を入力" pattern=".{1,200}"></textarea>
+        <textarea id="content" v-model="content" style="background-color: white; width: 100vw;" placeholder="投稿内容を入力" pattern=".{1,200}"></textarea>
         <p v-if="contentError" style="color: red;">投稿内容は1文字以上200文字以下にしてください</p>
     </div>
 
@@ -101,7 +101,7 @@ export default {
     return {
       type: 'null',
       genre: 'null',
-      prefecture: 'null',
+      prefecture: '非公開',
       name: '',
       content: '',
       nameError: false,
