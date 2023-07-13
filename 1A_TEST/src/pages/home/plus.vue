@@ -1,23 +1,28 @@
 <template>
   <form>
-    <label for="type">投稿タイプ:</label>
-    <select id="type" v-model="type">
+    <div>
+      <label for="type">投稿タイプ:</label>
+        <select id="type" v-model="type">
       <option value="null">選択してください</option>
       <option value="災害">災害</option>
       <option value="防災">防災</option>
-    </select>
+      </select>
+    </div>
 
-    <label for="genre">ジャンル:</label>
-    <select id="genre" v-model="genre">
+    <div>
+      <label for="genre">ジャンル:</label>
+        <select id="genre" v-model="genre">
       <option value="null">選択してください</option>
       <option value="飲料">飲料</option>
       <option value="食料">食料</option>
       <option value="持ち物">持ち物</option>
       <option value="その他">その他</option>
-    </select>
+      </select>
+    </div>
 
-    <label for="prefecture">都道府県:</label>
-    <select id="prefecture" v-model="prefecture">
+    <div>
+      <label for="prefecture">都道府県:</label>
+        <select id="prefecture" v-model="prefecture">
       <option value="null">選択してください</option>
       <option value="北海道">北海道</option>
       <option value="青森県">青森県</option>
@@ -66,15 +71,20 @@
       <option value="宮崎県">宮崎県</option>
       <option value="鹿児島県">鹿児島県</option>
       <option value="沖縄県">沖縄県</option>
-    </select>
+      </select>
+    </div>
 
-    <label for="name">名前:</label>
-    <input type="text" id="name" v-model="name" style="background-color: white;" placeholder="名前を入力" pattern=".{1,10}"/>
-    <p v-if="nameError" style="color: red;">名前は1文字以上10文字以下にしてください</p>
+    <div>
+      <label for="name"></label>
+        <input type="text" id="name" v-model="name" style="background-color: white; border-bottom:solid 2px black" placeholder="名前を入力" pattern=".{1,10}"/>
+        <p v-if="nameError" style="color: red;">名前は1文字以上10文字以下にしてください</p>
+    </div>
 
-    <label for="content">内容:</label>
-    <textarea id="content" v-model="content" style="background-color: white;" placeholder="投稿内容を入力" pattern=".{1,200}"></textarea>
-    <p v-if="contentError" style="color: red;">投稿内容は1文字以上200文字以下にしてください</p>
+    <div>
+      <label for="content"></label>
+        <textarea id="content" v-model="content" style="background-color: white;" placeholder="投稿内容を入力" pattern=".{1,200}"></textarea>
+        <p v-if="contentError" style="color: red;">投稿内容は1文字以上200文字以下にしてください</p>
+    </div>
 
     <!-- ボタンがクリックされたときにhandleClickメソッドを実行する -->
     <button type="button" @click="handleClick">送信</button>

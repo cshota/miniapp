@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="searchTerm" placeholder="Search..." />
+    <input type="text" v-model="searchTerm" placeholder="Search..." style="height: 3em;" />
     <button @click="search">検索</button>
 
     <div v-if="posts.length === 0">
