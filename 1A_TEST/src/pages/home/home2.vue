@@ -63,7 +63,7 @@
                 height: 15vw;
                 vertical-align: bottom;
                 ">
-        <img src="../../static/plus0.png" style="margin: auto; width: 30%;"/>
+        <img src="../../static/plus.png" style="margin: auto; width: 30%;"/>
         </button>
         <button @click="link113()" 
         style="display: inline-block;
@@ -72,7 +72,7 @@
             height: 15vw;
             vertical-align: bottom;
             ">
-        <img src="../../static/search0.png" style="margin: auto; width: 30%;"/>
+        <img src="../../static/search.png" style="margin: auto; width: 30%;"/>
         </button>
     </div>
     </div>
