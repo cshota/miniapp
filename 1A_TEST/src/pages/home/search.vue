@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="searchTerm" placeholder="Search..." style="height: 3em;" />
+    <input type="text" v-model="searchTerm" placeholder="検索ワード..." style="height: 3em; background-color: rgba(202, 204, 199, 0.777);" />
     <button @click="search">検索</button>
 
     <div v-if="posts.length === 0">
@@ -12,8 +12,8 @@
         <p>投稿タイプ: {{ post.type }}</p>
         <p>ジャンル: {{ post.genre }}</p>
         <p>都道府県: {{ post.prefecture }}</p>
-        <p>名前: {{ post.name }}</p>
         <p>日付: {{ post.date }}</p>
+        <p>名前: {{ post.name }}</p>
         <p>内容: {{ post.content }}</p>
       </div>
     </template>
