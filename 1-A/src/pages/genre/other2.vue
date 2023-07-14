@@ -58,10 +58,8 @@
             <p>{{ post.date }}</p> <!--日時-->
             <p><strong>名前:</strong> {{ post.name }}</p> <!--名前-->
             <p><strong>内容:</strong> {{ post.content }}</p> <!--投稿内容-->
-            <p><img src="../../static/heart.png"> {{ post.likes }}</p>  <!-- いいねの数を表示 -->
-            <button @click="likePost(post.id)" class="heartbutton" style="border: none;">
-                <img src="../../static/heart.png"> <!--♥ボタン-->
-            </button> 
+            <p class="heart" style="position: absolute; padding-right: 5vw; padding-bottom: 5px;">{{ post.likes }}</p><!-- いいねの数を表示 -->
+            <img @click="likePost(post.id)" class="heart" src="../../static/heart.png" style="width: 1em; height: 0.85em; margin-left: 80vw; padding: 0;">
         </div>
     </div>
 </template>
@@ -144,17 +142,10 @@ setup() {
     font-size: 80%;
     padding: 0;
 }
-.heartbutton {
-    width: 20%;
-    height: auto;
-    text-align: center;
-    margin: 0 0 0 auto;
-    padding: 0;
-    padding-right: 1em;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: flex-end;
-    border: antiquewhite;
-    outline: antiquewhite;
+.heart {
+    
+    right: 0;
+    display: inline-flex;
+    padding-left: 5px;
 }
 </style>

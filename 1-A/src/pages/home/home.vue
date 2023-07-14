@@ -80,8 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { onLoad } from "@dcloudio/uni-app";
+
 
 //災害ホームへ
 const link1 = () => {
