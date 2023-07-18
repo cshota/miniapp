@@ -1,9 +1,9 @@
 <template>
   <div>
-    <input type="text" v-model="searchTerm" placeholder="検索ワード..." style="height: 3em; background-color: rgba(202, 204, 199, 0.777);" />
-    <button @click="search">検索</button>
+    <input type="text" v-model="searchTerm" placeholder="検索ワード..." style="height: 3em; background-color: rgba(202, 204, 199, 0.777); font-size: 150%;" />
+    <button @click="search" style="font-size: 180%;">検索</button>
 
-    <div v-if="posts.length === 0">
+    <div v-if="posts.length === 0" style="font-size: 150%;">
       投稿が見つかりません
     </div>
 

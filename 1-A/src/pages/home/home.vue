@@ -1,78 +1,74 @@
 <template>
   <div class="navtop"><!--上部のナビゲーションバー-->
-    <button @click="link1()" 
-      style="display: inline-block;
+    <button @click="link1()" style="display: inline-block;
             background-color: red;
             color: white;
             width: 50%;
-            ;
+            font-size: 180%;
             ">
-            災害
+      災害
     </button>
-    <button @click="link2()" 
-      style="display: inline-block;
+    <button @click="link2()" style="display: inline-block;
             background-color: rgb(0, 0, 100);
             color: white;
-            width: 50%
+            width: 50%;
+            font-size: 180%;
             ">
-            防災
-      </button>
+      防災
+    </button>
     <div class="contents"><!--投稿ジャンル高くする-->
-      <button @click="link11()" 
-        style="display: block;
+      <button @click="link11()" style="display: block;
               height: 15vw;
               background-color: antiquewhite;
+              font-size: 180%;
               ">
         飲料
       </button>
-      <button @click="link12()" 
-        style="display: block;
+      <button @click="link12()" style="display: block;
               height: 15vw;
               background-color: antiquewhite;
+              font-size: 180%;
         ">
         食料
       </button>
-      <button @click="link13()" 
-        style="display: block;
+      <button @click="link13()" style="display: block;
               height: 15vw;
               background-color: antiquewhite;
+              font-size: 180%;
         ">
         持ち物
       </button>
-      <button @click="link14()" 
-        style="display: block;
+      <button @click="link14()" style="display: block;
               height: 15vw;
               background-color: antiquewhite;
+              font-size: 180%;
         ">
         その他
       </button>
       <div class="navbot">
-        <button @click="link111()" 
-          style="display: inline-block;
+        <button @click="link111()" style="display: inline-block;
                 background-color: red;
                 width: 33.3vw;
                 height: 15vw;
                 vertical-align: bottom;
                 ">
-          <img src="../../static/home.png" style="margin: auto; width: 30%;"/>
+          <img src="../../static/home.png" style="margin: auto; width: 30%;" />
         </button>
-        <button @click="link112()" 
-          style="display: inline-block;
+        <button @click="link112()" style="display: inline-block;
                 background-color: red;
                 width: 33.3vw;
                 height: 15vw;
                 vertical-align: bottom;
                 ">
-          <img src="../../static/plus.png" style="margin: auto; width: 30%;"/>
+          <img src="../../static/plus.png" style="margin: auto; width: 30%;" />
         </button>
-        <button @click="link113()" 
-          style="display: inline-block;
+        <button @click="link113()" style="display: inline-block;
               background-color: red;
               width: 33.3vw;
               height: 15vw;
               vertical-align: bottom;
               ">
-          <img src="../../static/search.png" style="margin: auto; width: 30%;"/>
+          <img src="../../static/search.png" style="margin: auto; width: 30%;" />
         </button>
       </div>
     </div>
@@ -140,7 +136,7 @@ const link113 = () => {
 
 <style>
 .navbot {
-  position:absolute;
+  position: absolute;
   bottom: 0;
 }
 </style>
